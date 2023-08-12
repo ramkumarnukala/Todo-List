@@ -1,0 +1,10 @@
+.titleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    >span {
+        font-size: 24px;
+    }
+}

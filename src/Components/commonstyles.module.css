@@ -1,0 +1,108 @@
+.planning {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+        background-color: rgb(0, 102, 255);
+        border-radius: 8px;
+        padding: 8px 0px;
+        margin: 10px 0px;
+        color: white;
+    }
+
+    > div {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.inprogress {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+        background-color: rgb(255, 140, 0);
+        border-radius: 8px;
+        padding: 8px 0px;
+        margin: 10px 0px;
+        color: white;
+    }
+
+    > div {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.completed {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+        background-color: rgb(0, 144, 41);
+        border-radius: 8px;
+        padding: 8px 0px;
+        margin: 10px 0px;
+        color: white;
+    }
+
+    > div {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.cardwrapper {
+    display: inline-block;
+    min-width: 30%;
+    max-width: fit-content;
+    height: max-content;
+    word-wrap: break-word;
+    margin: 0.4rem;
+    box-shadow: 0px 0px 2px #c9c8c8;
+}
+
+.planningcard {
+    border-left: 5px solid rgb(0, 102, 255);
+}
+
+.inprogresscard {
+    border-left: 5px solid rgb(255, 140, 0);
+}
+
+.completedcard {
+    border-left: 5px solid rgb(0, 144, 41);
+}
+
+.cardactions {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    gap: 10px;
+
+    > span svg {
+        font-size: 16px;
+    }
+}
+
+.planningactions :hover {
+    color: rgb(0, 102, 255);
+}
+
+.inprogressactions :hover {
+    color: rgb(255, 140, 0);
+}
+
+.completedactions :hover {
+    color: rgb(0, 144, 41);
+}
