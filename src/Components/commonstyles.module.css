@@ -1,5 +1,15 @@
-.planning {
+.taskcontainer {
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    gap: 0.3rem;
+    box-shadow: 0px 0px 1px #c9c8c8;
+}
+
+.planning {
+    height: 120%;
     display: flex;
     flex-direction: column;
 
@@ -10,17 +20,10 @@
         margin: 10px 0px;
         color: white;
     }
-
-    > div {
-        width: auto;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 .inprogress {
-    height: 100%;
+    height: 120%;
     display: flex;
     flex-direction: column;
 
@@ -31,17 +34,10 @@
         margin: 10px 0px;
         color: white;
     }
-
-    > div {
-        width: auto;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 .completed {
-    height: 100%;
+    height: 120%;
     display: flex;
     flex-direction: column;
 
@@ -52,19 +48,13 @@
         margin: 10px 0px;
         color: white;
     }
+}
 
-    > div {
-        width: auto;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
+.cardcontainer {
+    width: 100%;
 }
 
 .cardwrapper {
-    display: inline-block;
-    min-width: 30%;
-    max-width: fit-content;
     height: max-content;
     word-wrap: break-word;
     margin: 0.4rem;
